@@ -19,4 +19,4 @@
 101-clean_emacs: deletes all files in the current working directory that end with the character ~.
 102-tree: creates the directories welcome/, welcome/to, and welcome/to/school in the current directory.
 102-commas: listsall the files and directoris of the current directorry, seperated by commas (,) * directory names should end with a slash(/) * hidden files and directories should be listed. * listing sould be alpha ordered, except forthe directories . and .. which should be listed at the very beginning. * only digits and letters are used to sort (digits should come first) * listing should end with a new line.
-school.mgc: used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0. (Haven't done this task yet). 
+school.mgc: used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0.
