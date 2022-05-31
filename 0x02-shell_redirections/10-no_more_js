@@ -1,2 +1,2 @@
 #!/bin/bash
-ls --file-type f -R | rm -R *.js
+file . -type f '*.js' -exec rm
