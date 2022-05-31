@@ -1,2 +1,2 @@
 #!/bin/bash
-file . -type f '*.js' -exec rm
+find . -type f -name "*.js" -delete
