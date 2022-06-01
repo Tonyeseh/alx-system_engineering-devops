@@ -1,2 +1,2 @@
 #!/bin/bash
-head -n -1
+awk 'NR%2' 
