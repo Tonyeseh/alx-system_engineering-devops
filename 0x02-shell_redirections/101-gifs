@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name '*.gif' -execdir echo {} ';' | cut -b 3-
+find . -type f -name "*.gif" -execdir echo {} ';' | cut -b 3-
