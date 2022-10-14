@@ -24,7 +24,8 @@ int infinite_while(void)
 /**
  * main - Create 5 zombie processess
  *
- * Description: For every zombie process created, it displays 'Zombie process created, PID: ZOMBIE_PID'
+ * Description: For every zombie process created, it displays
+ *		'Zombie process created, PID: ZOMBIE_PID'
  *
  * Return: 0 Always
  */
@@ -36,13 +37,14 @@ int main(void)
 
 	while (i < 5)
 	{
-		if ((pid = fork()) > 0)
+		pid = fork();
+		if (pid > 0)
 		{
 			printf("Zombie process created, PID: %d\n", pid);
 			i++;
 		}
 		else
-			exit (0);
+			exit(0);
 	}
 
 	infinite_while();
