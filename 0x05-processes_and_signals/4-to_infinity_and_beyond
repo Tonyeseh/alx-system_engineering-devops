@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Displays to "infinity and beyond" indefinitely
+
+
+for (( i=0; i<9; ))
+do
+	echo "infinity and beyond"
+	sleep 2
+done
