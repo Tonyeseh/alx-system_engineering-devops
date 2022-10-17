@@ -1,6 +1,8 @@
 # 0x04 Loops, conditions and parsing
 ###### Learnt about loops, variable assignment and arithmetic, comparison operators, file test operators, how to make scripts portable... The commands lerant are `env`, `cut`, `for`, `while`, `until`, `if` and `awk` for the advanced task.
 
+## Tasks :page_with_curl:
+
 * **0. Create a SSH RSA key pair**
 	* [0-RSA_public_key.pub](./0-RSA_public_key.pub) - contains the public key a intranet machine
 
