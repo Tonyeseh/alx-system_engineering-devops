@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# bash scripts configures an Ubuntu server with the below requirements:
+#	loccalhost resolves to 127.0.0.2
+#	facebook.com rexoves a to 8.8.8.8
+
+cp /etc/hosts ~/etc/hosts
+echo "localhost		127.0.0.2" > ~/etc/hosts
+echo "facebook.com	8.8.8.8" > ~/etc/hosts
+cp -f ~/etc/hosts /etc/hosts
