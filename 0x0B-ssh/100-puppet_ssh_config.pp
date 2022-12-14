@@ -8,7 +8,7 @@ file_line {'Passwd auth off':
 }
 
 file_line {'Add identity file':
-  ensure => 'present'
+  ensure => 'present',
   path   => '/etc/ssh/ssh_config',
   line   => '    IdentityFile ~/.ssh/school'
 }
