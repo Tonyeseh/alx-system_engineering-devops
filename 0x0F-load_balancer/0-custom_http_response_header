@@ -3,8 +3,10 @@
 
 apt-get update
 apt-get install -y nginx
+sudo ufw allow "Nginx HTTP"
 
 mkdir -p /var/www/html
+sudo chmod -R 755 /var/www
 touch /var/www/html/index.html
 echo "Hello World" > /var/www/html/index.html
 touch "Ceci n'est pas une page" > 404.html
