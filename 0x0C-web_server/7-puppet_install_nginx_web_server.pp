@@ -4,7 +4,7 @@ package { 'nginx':
   ensure => installed,
 }
 
-file { '/var/html/index.html':
+file { '/var/www/html/index.html':
   content => 'Hello World!',
 }
 
