@@ -8,7 +8,7 @@ config=\
 frontend web_air_bnb_front
 	bind *:80
 	mode http
-	default_backend web-backend
+	default_backend web_air_bnb_backend
 
 
 backend web_air_bnb_backend
