@@ -5,7 +5,7 @@
 get_info () {
 	record_type=$(dig "$1"."$2" | grep -A1 "ANSWER SECTION" | tr '\t' '\n' | tail -2 | head -1)
 	ip=$(dig "$1"."$2" | grep -A1 "ANSWER SECTION" | tr '\t' '\n' | tail -2 | tail -1)
-	echo "$1 $record_type $ip" | awk '{print "The subdomain", $1, "is a", $2, "record and points to ", $3}'
+	echo "$1 $record_type $ip" | awk '{print "The subdomain", $1, "is a", $2, "record and points to", $3}'
 }
 
 if [ "$#" -eq 1 ]
