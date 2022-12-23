@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Finds the subdomain and record type of a domain
+#+ prints result in a pretty format
+
+get_info () {
+	record_type=$(dig "$1"."$2" | grep -A1 "ANSWER SECTION" | tr '\t' '\n' | tail -2 | head -1)
+	ip=$(dig "$1"."$2" | grep -A1 "ANSWER SECTION" | tr '\t' '\n' | tail -2 | tail -1)
+	echo "$1 $record_type $ip" | awk '{print "The subdomain", $1, "is a", $2, "record and points to ", $3}'
+}
+
+if [ "$#" -eq 1 ]
+then
+	get_info "www" "$1"
+	get_info "lb-01" "$1"
+	get_info "web-01" "$1"
+	get_info "web-02" "$1"
+else
+	get_info "$2" "$1"
+fi
