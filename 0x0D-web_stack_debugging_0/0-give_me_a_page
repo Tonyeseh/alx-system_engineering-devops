@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Debugging why a server using apache is not serving page
+
+service apache2 start
