@@ -1,7 +1,8 @@
 # 0x12. Web stack debugging #2
 Important lessons in this project
 * Do not run your server as root
-* If a service does not run, sometimes another service is using it's port
+* If a service does not run, sometimes another service is using it's port.
+* Also, you should check if the config file is valid.
 
 ## Tasks :page_with_curl:
 
