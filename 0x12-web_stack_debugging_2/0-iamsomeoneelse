@@ -1,4 +1,4 @@
-#!usr/bin/env bash
+#!/usr/bin/env bash
 # executes whoami command with the account passed as arg
 
 sudo -u "$1" whoami
