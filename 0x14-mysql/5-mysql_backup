@@ -2,5 +2,5 @@
 # Creates a mysql dump file for the databases and compresses it
 
 archive=$(date +%d-%m-%Y).tar.gz
-mysqldump -u root -p "$1" --all-databases > backup.sql
+mysqldump -u root -p"$1" --all-databases > backup.sql
 tar -cvzf "$archive" backup.sql
