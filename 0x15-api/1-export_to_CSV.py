@@ -2,10 +2,10 @@
 """
 returns information for a given employee ID about his/her TODO list progress
 """
+import csv
+import json
 from sys import argv
 import requests
-import json
-import csv
 
 
 if __name__ == "__main__":
