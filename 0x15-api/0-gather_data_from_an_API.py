@@ -2,9 +2,9 @@
 """
 returns information for a given employee ID about his/her TODO list progress
 """
-from sys import argv
-import requests
 import json
+import requests
+from sys import argv
 
 
 def get_completed_tasks(todos):
