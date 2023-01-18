@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""beginning of script"""
 """
-extends the 0-gather_data_from_an_API module exports data in csv format
+extends the 0-gather_data_from_an_API module
+exports data in csv format
 """
 import csv
 import json
