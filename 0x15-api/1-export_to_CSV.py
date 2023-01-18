@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-returns information for a given employee ID about his/her TODO list progress
+extends the 0-gather_data_from_an_API module exports data in csv format
 """
 import csv
 import json
