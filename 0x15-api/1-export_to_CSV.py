@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""beginning of script"""
 """
 extends the 0-gather_data_from_an_API module
 exports data in csv format
@@ -18,6 +17,7 @@ if __name__ == "__main__":
         "https://jsonplaceholder.typicode.com/todos/?userId={}"
         .format(user_data.get("id")))
     user_todos = json.loads(user_todos.text)
+    filename = "{}.csv".format(argv[1])
 
     user_dict = []
     for todo in user_todos:
@@ -28,7 +28,7 @@ if __name__ == "__main__":
         dic["title"] = todo["title"]
         user_dict.append(dic)
 
-    with open(f"{argv[1]}.csv", "w", newline="") as f:
+    with open(filename, "w", newline="") as f:
         if user_dict is None or user_dict == []:
             f.write("[]")
         else:
