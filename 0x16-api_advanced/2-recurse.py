@@ -7,7 +7,8 @@ import requests
 
 
 def recurse(subreddit, hot_list=[], after=""):
-    """returnd a list containing the titles of all hot articles for a given subreddit.
+    """returns a list containing the titles
+        of all hot articles for a given subreddit.
 
         Args:
             subreddit(str): subreddit name
@@ -22,7 +23,8 @@ def recurse(subreddit, hot_list=[], after=""):
         "after": after,
         "limit": 100
     }
-    res = requests.get(url, headers=headers, params=params, allow_redirects=False)
+    res = requests.get(url, headers=headers, params=params,
+        allow_redirects=False)
     if res.status_code == 404:
         return None
     results = res.json().get('data')
