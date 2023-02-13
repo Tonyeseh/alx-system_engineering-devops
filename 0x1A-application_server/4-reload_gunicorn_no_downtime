@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 # Gracefully exiting/restarting gunicorn program
 
-pid=$(pgrep gunicorn)
-
-kill -HUP "$pid"
+ps aux | grep gunicorn | awk '{ print $2 }' | xargs kill -HUP
