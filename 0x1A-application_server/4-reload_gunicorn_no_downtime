@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Gracefully exiting/restarting gunicorn program
+
+pid=$(pgrep gunicorn)
+
+kill -HUP $pid
