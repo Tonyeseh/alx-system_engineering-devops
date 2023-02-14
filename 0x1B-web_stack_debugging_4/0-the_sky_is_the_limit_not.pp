@@ -4,11 +4,10 @@
 exec { 'ulimit-incre':
   command => 'sed -i "s/15/4096/" /etc/default/nginx',
   path    => '/usr/local/bin/:/bin/'
-} ->
+}
 
 # Restart Nginx
-exec { 'restart_restart':
+exec { 'restart_nginx':
   command     => 'service nginx restart',
-  path        => '/usr/bin/:/bin/'
-  refreshonly => true
+  path        => '/usr/sbin/:/sbin/',
 }
