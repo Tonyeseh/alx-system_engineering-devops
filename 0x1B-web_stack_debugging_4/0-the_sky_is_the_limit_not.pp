@@ -8,6 +8,6 @@ exec { 'ulimit-incre':
 
 # Restart Nginx
 exec { 'restart_nginx':
-  command     => 'service nginx restart',
-  path        => '/usr/sbin/:/sbin/',
+  command => 'service nginx restart',
+  path    => '/usr/sbin/:/sbin/'
 }
